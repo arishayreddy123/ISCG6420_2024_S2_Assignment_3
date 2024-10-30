@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<areas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./areas.xsd">
+    <!-- Areas with capacity 5 -->
+    <area>
+        <id>1</id>
+        <top>90px</top>
+        <left>20px</left>
+        <width>80px</width>
+        <height>80px</height>
+        <cost>100</cost> <!-- Price for one day -->
+        <capacity>5</capacity>
+        <image>./assets/room1.jpg</image>
+        <available>true</available>
+    </area>
+
+    <area>
+        <id>2</id>
+        <top>90px</top>
+        <left>150px</left>
+        <width>80px</width>
+        <height>80px</height>
+        <cost>120</cost>
+        <capacity>5</capacity>
+        <image>./assets/room2.jpg</image>
+        <available>true</available>
+    </area>
+
+    <area>
+        <id>3</id>
+        <top>210px</top>
+        <left>20px</left>
+        <width>80px</width>
+        <height>80px</height>
+        <cost>110</cost>
+        <capacity>5</capacity>
+        <image>./assets/room3.jpg</image>
+        <available>true</available>
+    </area>
+
+    <area>
+        <id>4</id>
+        <top>310px</top>
+        <left>20px</left>
+        <width>80px</width>
+        <height>80px</height>
+        <cost>130</cost>
+        <capacity>5</capacity>
+        <image>./assets/room4.jpg</image>
+        <available>true</available>
+    </area>
+
+    <area>
+        <id>5</id>
+        <top>410px</top>
+        <left>20px</left>
+        <width>80px</width>
+        <height>80px</height>
+        <cost>100</cost>
+        <capacity>5</capacity>
+        <image>./assets/room5.jpg</image>
+        <available>true</available>
+    </area>
+
+    <!-- Areas with capacity 10 -->
+    <area>
+        <id>6</id>
+        <top>80px</top>
+        <left>300px</left>
+        <width>100px</width>
+        <height>100px</height>
+        <cost>150</cost>
+        <capacity>10</capacity>
+        <image>./assets/room6.jpg</image>
+        <available>true</available>
+    </area>
+
+    <area>
+        <id>7</id>
+        <top>80px</top>
+        <left>450px</left>
+        <width>100px</width>
+        <height>100px</height>
+        <cost>140</cost>
+        <capacity>10</capacity>
+        <image>./assets/room7.jpg</image>
+        <available>true</available>
+    </area>
+
+    <!-- Areas with capacity 20 -->
+    <area>
+        <id>8</id>
+        <top>220px</top>
+        <left>440px</left>
+        <width>120px</width>
+        <height>120px</height>
+        <cost>200</cost>
+        <capacity>20</capacity>
+        <image>./assets/room8.jpg</image>
+        <available>true</available>
+    </area>
+
+    <area>
+        <id>9</id>
+        <top>410px</top>
+        <left>440px</left>
+        <width>120px</width>
+        <height>120px</height>
+        <cost>220</cost>
+        <capacity>20</capacity>
+        <image>./assets/room9.jpg</image>
+        <available>true</available>
+    </area>
+
+    <!-- Area with capacity 50 -->
+    <area>
+        <id>10</id>
+        <top>480px</top>
+        <left>140px</left>
+        <width>150px</width>
+        <height>150px</height>
+        <cost>300</cost>
+        <capacity>50</capacity>
+        <image>./assets/room10.jpg</image>
+        <available>true</available>
+    </area>
+</areas>

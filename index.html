@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parakai Springs Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <a href="https://github.com/arishayreddy123/ISCG6420_2024_S2_Assignment_3" target="_blank">
+            <img src="./assets/logo.png" alt="Logo" class="rounded-logo">
+        </a>
+    </div>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+        
+        <!-- Header Title Container -->
+        <div class="header-title-container">
+            <h1 class="header-title">Parakai Springs Booking System</h1>
+        </div>
+
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Homepage</a></li>
+                <li><a href="./game.html"><i class="fas fa-gamepad"></i> Game</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-book"></i> Storyboard <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="./assets/Website_Wireframe.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Website Wireframe</a>
+                        <a href="./assets/Game_Storyboard.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Game Storyboard</a>
+                    </div>
+                </li>
+                <li><a href="./assets/XML_XSD_Design_Document.pdf" target="_blank"><i class="fas fa-database"></i> Data File</a></li>
+            </ul>
+        </nav>
+        
+    </div> <!-- End of Wrapper -->
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <!-- Instructions Section -->
+            <section class="instructions">
+                <h2><i class="fas fa-info-circle"></i> How to Use the Booking System</h2>
+                <ol>
+                    <li>Select your desired <strong>Check-in</strong> and <strong>Check-out</strong> dates.</li><br>
+                    <li>Enter the number of <strong>attendees</strong> who will be staying.</li><br>
+                    <li>Click on one of the available areas on the map.</li><br>
+                    <li>The system will show details such as the area’s <strong>capacity</strong> and <strong>price per day</strong>.</li><br>
+                    <li>The system will validate that your group size fits within the selected area's capacity.</li><br>
+                    <li>After selecting an area, the <strong>Booking Summary</strong> will display all details, including total price.</li><br>
+                </ol>
+                <p>We accept:</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa fa-3x" style="color: #1a1f71;"></i>
+                    <i class="fab fa-cc-mastercard fa-3x" style="color: #eb001b;"></i>
+                    <i class="fab fa-cc-amex fa-3x" style="color: #0077a6;"></i>
+                    <i class="fab fa-cc-paypal fa-3x" style="color: #003087;"></i>
+                </div>
+            </section>
+
+            <!-- Booking Form Section -->
+            <section class="booking-form">
+                <h2><i class="fas fa-check-square"></i> Book Your Area</h2>
+                <form id="booking-form">
+                    <label for="checkin"><i class="fas fa-calendar-alt"></i> Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+
+                    <label for="checkout"><i class="fas fa-calendar-alt"></i> Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required disabled>
+
+                    <label for="attendees"><i class="fas fa-users"></i> Number of Attendees:</label>
+                    <input type="number" id="attendees" name="attendees" required>
+
+                    <button id="search-button" type="button"><i class="fas fa-search"></i> Search</button>
+                    <button id="update-button" type="button" style="display: none;"><i class="fas fa-edit"></i> Update Booking</button>
+                </form>
+
+                <!-- Booking Summary -->
+                <div id="booking-summary" style="background-color: #D8D8D8; padding: 15px; border-radius: 10px; margin-top: 15px;">
+                    <h3><i class="fas fa-clipboard-list"></i> Booking Summary</h3>
+                    <p id="summary-details">No area selected yet.</p>
+                </div>
+
+                <!-- Confirm Booking Button -->
+                <button id="book-button" type="button" style="display: none; width: 100%; margin-top: 10px;"><i class="fas fa-check"></i> Confirm Booking</button>
+            </section>
+
+            <!-- Map and Area Information Section -->
+            <section class="map-container">
+                <div id="area-info">
+                    <h2>Area Information</h2>
+                    <p>Hover over an area to see details.</p>
+                </div>
+                <h3>Select Your Area</h3>
+                <div class="park-map"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Parakai Springs Booking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="areas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="area" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:int" />
+                            <xs:element name="top" type="xs:string" />
+                            <xs:element name="left" type="xs:string" />
+                            <xs:element name="width" type="xs:string" />
+                            <xs:element name="height" type="xs:string" />
+                            <xs:element name="cost" type="xs:int" />
+                            <xs:element name="capacity" type="xs:int" />
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="available" type="xs:boolean" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Game</title>
+    <link rel="stylesheet" href="./game.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" target="_blank" rel="noopener noreferrer">
+                <button id="homeButton">Home</button>
+            </a>
+            <a href="./assets/Game_Storyboard.pdf" target="_blank" rel="noopener noreferrer">
+                <button id="wireframeButton">Wireframe</button>
+            </a>
+        </nav>
+    </header>
+    
+    
+
+    <div id="gameContainer">
+        <div id="timer">Time: 60</div> <!-- Timer display -->
+        <div id="scoreboard">Score: 0</div> <!-- Scoreboard -->
+        <canvas id="gameCanvas" width="800" height="600" aria-label="Game Canvas"></canvas>
+        
+        <div class="controls">
+            <div class="button-container">
+                <button id="startButton" class="start-button" aria-label="Start Game">Start</button>
+                <button id="restartButton" class="restart-button" style="display: none;" aria-label="Restart Game">Restart</button>
+                <button id="pauseButton" class="pause-button" style="display: none;" aria-label="Pause Game">Pause</button>
+            </div>
+            <div class="slider-container">
+                <label for="volumeControl">Volume:</label>
+                <input type="range" id="volumeControl" min="0" max="100" value="100" aria-label="Volume Control">
+                <label for="speedControl">Speed:</label>
+                <input type="range" id="speedControl" min="1" max="20" value="5" aria-label="Speed Control">
+                
+            </div>
+            <div class="slider-container">
+                <label for="timeSelector">Game Time:</label>
+                <select id="timeSelector" aria-label="Select Game Time">
+                    <option value="60" selected>60 sec</option>
+                    <option value="90">90 sec</option>                    <option value="120">120 sec</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Box -->
+    <div id="messageBox" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8); color: white; padding: 20px; border-radius: 10px; z-index: 1000;">
+        <h1 id="messageText">Game Over!</h1>
+        <button id="playAgainButton" onclick="playAgain()">Play Again</button>
+    </div>
+
+    <!-- Audio element for background music -->
+    <audio id="backgroundMusic" src="./assets/background.mp3" loop></audio>
+    <audio id="collectSound" src="./assets/collect-sound.mp3" preload="auto"></audio>
+    <audio id="missSound" src="./assets/miss-sound.mp3" preload="auto"></audio>
+    <audio id="winningSound" src="./assets/winning-sound.mp3" preload="auto"></audio>
+    
+    <div id="instructions"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
